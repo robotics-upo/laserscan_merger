@@ -1,0 +1,28 @@
+<!--
+DESCRITPION
+-->
+
+
+<launch>
+
+        <node pkg="laserscan_merger" name="republish_scans" type="republish_scans" output="screen">
+                <param name="publish_frequency" value="10.0" />
+                <param name="scan_topic_1" value="scan_raw" />
+                <param name="scan_topic_2" value="rgbd_scan" />
+        </node>
+
+        <node pkg="laserscan_merger" name="laserscan_merger" type="laserscan_merger" output="screen">
+        	<param name="destination_frame" value="base_link"/>
+		<param name="cloud_destination_topic" value="/merged_cloud"/>
+		<param name="scan_destination_topic" value="/scan_merged"/>
+                <param name="laserscan_topics" value ="/rgbd_scan /scan_raw" /> <!-- LIST OF THE LASER SCAN TOPICS TO SUBSCRIBE -->
+                <param name="max_update_time" value="0.2" />
+                <param name="angle_min" value="-1.8849600553512573"/>
+                <param name="angle_max" value="1.8849600553512573"/>
+                <param name="angle_increment" value="0.005773231387138367"/>
+                <param name="scan_time" value="0.0333333"/>
+                <param name="range_min" value="0.30"/>
+                <param name="range_max" value="25.0"/>
+
+	</node>
+</launch>
