@@ -24,19 +24,19 @@ Both nodes compile under catkin in Melodic/Noetic ROS distros.
 	- *cloud_destination_topic*. Name of the output topic with the merged laserscans transformed to a pointcloud (Def: */merged_cloud*).
 	- *scan_destination_topic*. Name of the output topic with the merged laserscans (Def: */scan_merged*).
 	- *laserscan_topics*. String with the names of the input scan topics separated by a blank spaces. (Ex: "/rgbd_scan /scan_raw /rear_scan").
-	- *destination_frame*. Target frame in which all the scan will be transformed.
+	- *destination_frame*. Target frame in which all the scans will be transformed.
 	
 * **laserscan Parameters**
 
 The parameters of the output laserscan message. See the message documentation [sensor_msgs/LaserScan](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/LaserScan.html).
 
-- *max_update_time*.
-- *angle_min*.
-- *angle_max*.
-- *angle_increment*.
-- *scan_time*.
-- *range_min*.
-- *range_max*.
+	- max_update_time
+	- angle_min
+	- angle_max
+	- angle_increment
+	- scan_time
+	- range_min
+	- range_max
 	 
 ## Lasercan_merger subscriptions
 
