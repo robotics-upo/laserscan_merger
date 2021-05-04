@@ -30,13 +30,13 @@ Both nodes compile under catkin in Melodic/Noetic ROS distros.
 
 The parameters of the output laserscan message. See the message documentation [sensor_msgs/LaserScan](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/LaserScan.html).
 
-	- *max_update_time*.
-	- *angle_min*.
-	- *angle_max*.
-	- *angle_increment*.
-	- *scan_time*.
-	- *range_min*.
-	- *range_max*.
+- *max_update_time*.
+- *angle_min*.
+- *angle_max*.
+- *angle_increment*.
+- *scan_time*.
+- *range_min*.
+- *range_max*.
 	 
 ## Lasercan_merger subscriptions
 
